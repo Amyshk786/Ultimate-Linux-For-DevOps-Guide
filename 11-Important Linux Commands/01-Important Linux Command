@@ -1,0 +1,127 @@
+
+
+# 10 Linux Command every Software Engineer should know
+=========================================================
+
+
+1) top / htop - Monitor system performance in Real-Time, including CPU, memory, and active processes, in real-time & "htop" is just a Wrapper on top of "top" Command and it Provides Better Readability.
+
+
+
+2) ps / pgrep / pstree -p - View running processes, find process IDs, and visualize parent-child relationships, Hierarchy of All the Processes.
+
+
+
+
+
+3) netstat / netstat -tunlp / ss - Inspect network connections, listening ports, and interface statistics.
+
+
+-------------
+
+netstat – Displays network status (connections, routing tables, interfaces, etc.)
+
+-t – Show TCP connections
+-u – Show UDP connections
+-n – Show numerical addresses (IP addresses and port numbers instead of resolving names)
+-l – Show listening sockets (services waiting for connections)
+-p – Show the PID and program name using the socket
+
+Note - Requires root privileges (sudo) to see all processes
+
+------------
+
+
+
+
+
+
+4) tcpdump - Capture and analyze network packets to diagnose connectivity issues.
+
+
+------------
+
+sudo tcpdump -i ens5 port 80  [ens5 is the Network Interface we can run "ifconfig" Command and check the Interface name]
+
+Below is the Breakdown of the Command
+
+
+- sudo
+Required because packet capture needs root privileges.
+
+- tcpdump
+A command-line packet analyzer used to inspect network traffic.
+
+- -i ens5
+Specifies the network interface to listen on (e.g., Ethernet or Wi-Fi adapter).
+Replace enX0 with your actual interface name (like eth0, ens33, wlan0).
+
+- port 80
+A BPF filter that captures only packets where source or destination port is 80 (HTTP).
+
+------------
+
+
+
+
+
+
+5) ping / traceroute / mtr - Test network connectivity and trace the path to a remote host.
+
+
+
+
+
+6) df / du - Check disk space usage and find large directories or files. [By using du -sh /opt we will get the Size of the /opt Directory]
+
+
+
+
+
+
+7) free / vmstat - Monitor memory usage and view virtual memory statistics.
+
+
+
+
+
+8) journalctl - Access system Logs managed by systemd to Troubleshoot Service Issues.
+
+
+------------
+
+journalctl -u nginx
+Jan 21 11:01:36 ip-172-31-67-39 systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Jan 21 11:01:36 ip-172-31-67-39 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
+
+------------
+
+
+
+
+
+
+9) lsof - Identify open files and the processes that opened them.   ["netstat -tunlp"  then select the Port u want to checki and run this Command "lsof -i :8085"]
+
+
+
+
+
+
+10) tail / less / grep - Inspect and filter log files to find errors or specific patterns.
+
+
+
+[sudo head -n 10 /var/log/auth.log] - To List the First 10 Lines
+
+
+[sudo tail -n 10 /var/log/auth.log] - To List the Last 10 Lines
+
+
+
+
+
+
+
+
+
