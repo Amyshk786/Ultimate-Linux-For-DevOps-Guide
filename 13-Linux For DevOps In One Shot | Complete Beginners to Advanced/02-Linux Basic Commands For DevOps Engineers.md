@@ -25,10 +25,10 @@
 8) Head -> To view first lines of a File [head -n 5 file.txt] first 5 lines show krega
 
 
-9) Tail, tail -f -> To view last lines of a File,  [tail -n 5 file.txt] last 5 lines show krega,      tail-f is Used to View Logs file by DevOps Engiveers
+9) Tail, tail -f -> To view last lines of a File,  [tail -n 5 file.txt] last 5 lines show krega,      tail-f is used to view the Logs file by DevOps Engineers
 
 
-10) less, more -> Used to view Files but "less" is more useful
+10) less, more -> Used to view Files, but "less" is more useful
 
 
 11) cp  -> Used to copy a file,   cp -r used to copy a dir recursively
@@ -40,7 +40,7 @@
 13) wc -> Used to show Word Count  [We can use "wc" for Multiple File word count]  ["wc" CMD batati h lines kitni h, words kitne h & file kitne bytes ki h]
 
 
-14)  vi editor in Unix and Linux operating system?
+14)  vi editor in Unix and Linux operating systems?
 
 
 15 ) ln (hard link, soft link) -> ln -s is Used to Create a Softlink, If the Original file is deleted Softlink will also get deleted, it will be of blue color
