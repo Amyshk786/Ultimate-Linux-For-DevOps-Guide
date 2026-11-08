@@ -140,6 +140,7 @@ vmstat -a krege toh Active In-Active batata hai
 
 
 ubuntu@ip-172-31-1-139:~$ vmstat -a
+
 procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
  r  b   swpd   free  inact active   si   so    bi    bo   in   cs us sy id wa st
  0  0      0 103632 521928 128340    0    0     6     5   19   31  0  0 100  0  0
